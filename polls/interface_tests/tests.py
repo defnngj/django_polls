@@ -11,7 +11,7 @@ http://www.python-requests.org/en/master/
 class QuestionsTest(unittest.TestCase):
 
     def setUp(self):
-        self.base_url = 'http://127.0.0.1:8000/polls/questions'
+        self.base_url = 'http://127.0.0.1:8000/api/questions'
 
     def test_get_questions_success(self):
         '''get all questions success'''
@@ -24,7 +24,7 @@ class QuestionsTest(unittest.TestCase):
 class QuestionOptionTest(unittest.TestCase):
 
     def setUp(self):
-        self.base_url = 'http://127.0.0.1:8000/polls/question_option/'
+        self.base_url = 'http://127.0.0.1:8000/api/question_option/'
 
     def test_get_question_option_success(self):
         '''get question option success'''
@@ -51,7 +51,7 @@ class QuestionOptionTest(unittest.TestCase):
 class QuestionResultTest(unittest.TestCase):
 
     def setUp(self):
-        self.base_url = 'http://127.0.0.1:8000/polls/question_result/'
+        self.base_url = 'http://127.0.0.1:8000/api/question_result/'
 
     def test_get_question_result_success(self):
         '''get question result success'''
@@ -78,7 +78,7 @@ class QuestionResultTest(unittest.TestCase):
 class QuestionVoteTest(unittest.TestCase):
 
     def setUp(self):
-        self.base_url = 'http://127.0.0.1:8000/polls/question_vote/'
+        self.base_url = 'http://127.0.0.1:8000/api/question_vote/'
 
     def test_post_question_vote_qid_null(self):
         '''get question vote qid null'''
